@@ -33,7 +33,7 @@ module Yelp
       # @param id [String, Integer] the business id
       # @return [Faraday::Response] the raw response back from the connection
       def business_request(id)
-        result = @client.connection.get PATH + URI.escape(id)
+        result = @client.connection.get URI.escape(PATH + id)
         Error.check_for_error(result)
         result
       end
