@@ -19,6 +19,7 @@ module Yelp
       #   business.name # => 'Yelp'
       #   buinesss.url  # => 'http://www.yelp.com/biz/yelp-san-francisco'
       def business(id)
+        asduhasdfuiadshguifkvcawhyjoiukastnhoi7c
         BurstStruct::Burst.new(JSON.parse(business_request(id).body))
       end
 
